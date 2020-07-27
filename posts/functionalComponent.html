@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VUE函数式组件</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="noob master's blog">
+    <link rel="preload" href="/blog/assets/css/0.styles.56a09861.css" as="style"><link rel="preload" href="/blog/assets/js/app.2e061e8d.js" as="script"><link rel="preload" href="/blog/assets/js/2.52153801.js" as="script"><link rel="preload" href="/blog/assets/js/17.df519105.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.5bac5817.js"><link rel="prefetch" href="/blog/assets/js/11.3c5d8ab4.js"><link rel="prefetch" href="/blog/assets/js/12.a7d85d36.js"><link rel="prefetch" href="/blog/assets/js/13.f0ec700c.js"><link rel="prefetch" href="/blog/assets/js/14.488b7cee.js"><link rel="prefetch" href="/blog/assets/js/15.28b0de6f.js"><link rel="prefetch" href="/blog/assets/js/16.a539422f.js"><link rel="prefetch" href="/blog/assets/js/18.2c407c83.js"><link rel="prefetch" href="/blog/assets/js/19.cdd140a2.js"><link rel="prefetch" href="/blog/assets/js/20.12070a2f.js"><link rel="prefetch" href="/blog/assets/js/21.2fe9e256.js"><link rel="prefetch" href="/blog/assets/js/22.61aa69d0.js"><link rel="prefetch" href="/blog/assets/js/23.fc4d0b45.js"><link rel="prefetch" href="/blog/assets/js/24.55302084.js"><link rel="prefetch" href="/blog/assets/js/25.b6684a30.js"><link rel="prefetch" href="/blog/assets/js/26.ddb3c046.js"><link rel="prefetch" href="/blog/assets/js/3.95a4819b.js"><link rel="prefetch" href="/blog/assets/js/4.8d036ef4.js"><link rel="prefetch" href="/blog/assets/js/5.637ee56c.js"><link rel="prefetch" href="/blog/assets/js/6.3ae8c3fa.js"><link rel="prefetch" href="/blog/assets/js/7.f52431ac.js"><link rel="prefetch" href="/blog/assets/js/8.e54b04b2.js"><link rel="prefetch" href="/blog/assets/js/9.64b70f8e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.56a09861.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/posts/firstBlog.html" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/lebifeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/posts/firstBlog.html" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/lebifeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/blog/posts/plan.html" class="sidebar-link">summary for 2019 and plan for 2020</a></li><li><a href="/blog/posts/firstBlog.html" class="sidebar-link">2020年第一篇博客</a></li><li><a href="/blog/posts/flexLayout.html" class="sidebar-link">flex初体验</a></li><li><a href="/blog/posts/simplePromise.html" class="sidebar-link">手写promise</a></li><li><a href="/blog/posts/functionalComponent.html" aria-current="page" class="active sidebar-link">函数式组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/posts/functionalComponent.html#_1-vue中，-函数式组件指什么？" class="sidebar-link">1.VUE中， 函数式组件指什么？</a></li><li class="sidebar-sub-header"><a href="/blog/posts/functionalComponent.html#_2-vue中函数式组件用法" class="sidebar-link">2.VUE中函数式组件用法</a></li><li class="sidebar-sub-header"><a href="/blog/posts/functionalComponent.html#注意：-vue-component定义函数式组件时，必须提供render函数，否则会报错" class="sidebar-link">注意： Vue.component定义函数式组件时，必须提供render函数，否则会报错</a></li></ul></li><li><a href="/blog/posts/refreshTokenDesign.html" class="sidebar-link">JWT集成之refreshToken</a></li><li><a href="/blog/posts/vue-directive.html" class="sidebar-link">VUE 自定义指令</a></li><li><a href="/blog/posts/eventCenter.html" class="sidebar-link">统一调度中心</a></li><li><a href="/blog/posts/cross-origin.html" class="sidebar-link">跨域解决方案</a></li><li><a href="/blog/posts/generatorFunction.html" class="sidebar-link">Generator函数</a></li><li><a href="/blog/posts/http-cache.html" class="sidebar-link">http缓存</a></li><li><a href="/blog/posts/deepClone.html" class="sidebar-link">深克隆 与 浅克隆</a></li><li><a href="/blog/posts/javascriptInheritance.html" class="sidebar-link">js中的继承</a></li><li><a href="/blog/posts/GeneratorRunner.html" class="sidebar-link">基于Promise的Generator自动执行器</a></li><li><a href="/blog/posts/async&amp;defer.html" class="sidebar-link">async 和 defer</a></li><li><a href="/blog/posts/vue-inheritAttrs.html" class="sidebar-link">VUE组件之inheritAttrs</a></li><li><a href="/blog/posts/curryingFunction.html" class="sidebar-link">函数柯里化</a></li><li><a href="/blog/posts/fibonacciFunction.html" class="sidebar-link">斐波那契数列</a></li><li><a href="/blog/posts/tailRecursion.html" class="sidebar-link">尾递归</a></li><li><a href="/blog/posts/htmlRenderImprovement.html" class="sidebar-link">前端页面性能优化</a></li><li><a href="/blog/posts/webpackImprovement.html" class="sidebar-link">WEBPACK性能优化</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue函数式组件"><a href="#vue函数式组件" class="header-anchor">#</a> VUE函数式组件</h1> <h2 id="_1-vue中，-函数式组件指什么？"><a href="#_1-vue中，-函数式组件指什么？" class="header-anchor">#</a> 1.VUE中， 函数式组件指什么？</h2> <div class="custom-block tip"><p class="custom-block-title">引用vue官方的话</p> <p>没有管理任何状态，也没有监听任何传递给它的状态，也没有生命周期方法，实际上，它只是一个接受一些 prop 的函数。在这样的场景下，我们可以将组件标记为 functional，这意味它无状态
+(没有响应式数据)，也没有实例 (没有 this 上下文)</p></div> <p><em>我的理解</em>
+参考React.js无状态组件：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> <span class="token function-variable function">FunctionalComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>xxx<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+</code></pre></div><p>这样好理解了吧，就是像函数一样接收一些props，返回简单模板，不涉及状态管理等，合理使用函数式组件能提高页面性能</p> <h2 id="_2-vue中函数式组件用法"><a href="#_2-vue中函数式组件用法" class="header-anchor">#</a> 2.VUE中函数式组件用法</h2> <p>1.Vue.component</p> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'anchored-heading'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 加上这个属性，表示该组件为functionalComponent</span>
+    functional<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// functionalComponent因为没有实例， 所以这里面千万别像之前一样用this，</span>
+    <span class="token comment">// render函数提供了第二个参数 context,里面能拿到一些相关信息，具体参考VUE API</span>
+    <span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">createElement<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 创建 kebab-case 风格的 ID</span>
+      <span class="token keyword">let</span> headingId <span class="token operator">=</span> <span class="token function">getChildrenTextContent</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">slots</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/\W+/g</span><span class="token punctuation">,</span> <span class="token string">'-'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/(^-|-$)/g</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token function">createElement</span><span class="token punctuation">(</span>
+          <span class="token string">'h'</span> <span class="token operator">+</span> context<span class="token punctuation">.</span>props<span class="token punctuation">.</span>level<span class="token punctuation">,</span>
+          <span class="token punctuation">[</span>
+            <span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              attrs<span class="token operator">:</span> <span class="token punctuation">{</span>
+                name<span class="token operator">:</span> headingId<span class="token punctuation">,</span>
+                href<span class="token operator">:</span> <span class="token string">'#'</span> <span class="token operator">+</span> headingId
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> context<span class="token punctuation">.</span><span class="token function">slots</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">)</span>
+          <span class="token punctuation">]</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    props<span class="token operator">:</span> <span class="token punctuation">{</span>
+      level<span class="token operator">:</span> <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+        required<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="注意：-vue-component定义函数式组件时，必须提供render函数，否则会报错"><a href="#注意：-vue-component定义函数式组件时，必须提供render函数，否则会报错" class="header-anchor">#</a> <em>注意： Vue.component定义函数式组件时，必须提供render函数，否则会报错</em></h2> <p>2.Vue单文件组件形式, 要求2.5.0版本以上</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template functional<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;cell&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">&quot;props.value&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;on&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>section v<span class="token operator">-</span><span class="token keyword">else</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;off&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>section<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'value'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意事项:</p> <ol><li><em>template中获取props的写法</em></li> <li>函数式组件被ref引用, 得到的结果是HTMLElement</li></ol></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/posts/simplePromise.html" class="prev">
+        手写promise
+      </a></span> <span class="next"><a href="/blog/posts/refreshTokenDesign.html">
+        JWT集成之refreshToken
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2e061e8d.js" defer></script><script src="/blog/assets/js/2.52153801.js" defer></script><script src="/blog/assets/js/17.df519105.js" defer></script>
+  </body>
+</html>

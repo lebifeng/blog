@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>斐波那契函数</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="noob master's blog">
+    <link rel="preload" href="/blog/assets/css/0.styles.56a09861.css" as="style"><link rel="preload" href="/blog/assets/js/app.2e061e8d.js" as="script"><link rel="preload" href="/blog/assets/js/2.52153801.js" as="script"><link rel="preload" href="/blog/assets/js/14.488b7cee.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.5bac5817.js"><link rel="prefetch" href="/blog/assets/js/11.3c5d8ab4.js"><link rel="prefetch" href="/blog/assets/js/12.a7d85d36.js"><link rel="prefetch" href="/blog/assets/js/13.f0ec700c.js"><link rel="prefetch" href="/blog/assets/js/15.28b0de6f.js"><link rel="prefetch" href="/blog/assets/js/16.a539422f.js"><link rel="prefetch" href="/blog/assets/js/17.df519105.js"><link rel="prefetch" href="/blog/assets/js/18.2c407c83.js"><link rel="prefetch" href="/blog/assets/js/19.cdd140a2.js"><link rel="prefetch" href="/blog/assets/js/20.12070a2f.js"><link rel="prefetch" href="/blog/assets/js/21.2fe9e256.js"><link rel="prefetch" href="/blog/assets/js/22.61aa69d0.js"><link rel="prefetch" href="/blog/assets/js/23.fc4d0b45.js"><link rel="prefetch" href="/blog/assets/js/24.55302084.js"><link rel="prefetch" href="/blog/assets/js/25.b6684a30.js"><link rel="prefetch" href="/blog/assets/js/26.ddb3c046.js"><link rel="prefetch" href="/blog/assets/js/3.95a4819b.js"><link rel="prefetch" href="/blog/assets/js/4.8d036ef4.js"><link rel="prefetch" href="/blog/assets/js/5.637ee56c.js"><link rel="prefetch" href="/blog/assets/js/6.3ae8c3fa.js"><link rel="prefetch" href="/blog/assets/js/7.f52431ac.js"><link rel="prefetch" href="/blog/assets/js/8.e54b04b2.js"><link rel="prefetch" href="/blog/assets/js/9.64b70f8e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.56a09861.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/posts/firstBlog.html" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/lebifeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/posts/firstBlog.html" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/lebifeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/blog/posts/plan.html" class="sidebar-link">summary for 2019 and plan for 2020</a></li><li><a href="/blog/posts/firstBlog.html" class="sidebar-link">2020年第一篇博客</a></li><li><a href="/blog/posts/flexLayout.html" class="sidebar-link">flex初体验</a></li><li><a href="/blog/posts/simplePromise.html" class="sidebar-link">手写promise</a></li><li><a href="/blog/posts/functionalComponent.html" class="sidebar-link">函数式组件</a></li><li><a href="/blog/posts/refreshTokenDesign.html" class="sidebar-link">JWT集成之refreshToken</a></li><li><a href="/blog/posts/vue-directive.html" class="sidebar-link">VUE 自定义指令</a></li><li><a href="/blog/posts/eventCenter.html" class="sidebar-link">统一调度中心</a></li><li><a href="/blog/posts/cross-origin.html" class="sidebar-link">跨域解决方案</a></li><li><a href="/blog/posts/generatorFunction.html" class="sidebar-link">Generator函数</a></li><li><a href="/blog/posts/http-cache.html" class="sidebar-link">http缓存</a></li><li><a href="/blog/posts/deepClone.html" class="sidebar-link">深克隆 与 浅克隆</a></li><li><a href="/blog/posts/javascriptInheritance.html" class="sidebar-link">js中的继承</a></li><li><a href="/blog/posts/GeneratorRunner.html" class="sidebar-link">基于Promise的Generator自动执行器</a></li><li><a href="/blog/posts/async&amp;defer.html" class="sidebar-link">async 和 defer</a></li><li><a href="/blog/posts/vue-inheritAttrs.html" class="sidebar-link">VUE组件之inheritAttrs</a></li><li><a href="/blog/posts/curryingFunction.html" class="sidebar-link">函数柯里化</a></li><li><a href="/blog/posts/fibonacciFunction.html" aria-current="page" class="active sidebar-link">斐波那契数列</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/posts/fibonacciFunction.html#fibonacci-函数的-js-实现" class="sidebar-link">fibonacci 函数的 js 实现</a></li><li class="sidebar-sub-header"><a href="/blog/posts/fibonacciFunction.html#对比" class="sidebar-link">对比</a></li></ul></li><li><a href="/blog/posts/tailRecursion.html" class="sidebar-link">尾递归</a></li><li><a href="/blog/posts/htmlRenderImprovement.html" class="sidebar-link">前端页面性能优化</a></li><li><a href="/blog/posts/webpackImprovement.html" class="sidebar-link">WEBPACK性能优化</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="斐波那契函数"><a href="#斐波那契函数" class="header-anchor">#</a> 斐波那契函数</h1> <p>斐波那契数列（Fibonacci sequence），又称黄金分割数列、因数学家莱昂纳多·斐波那契
+（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，
+指的是这样一个数列：0、1、1、2、3、5、8、13、21、34、……在数学上，斐波那契数列以如下
+被以递推的方法定义：F(1)=1，F(2)=1, F(n)=F(n - 1) + F(n - 2)（n ≥ 3，n ∈ N*）</p> <h2 id="fibonacci-函数的-js-实现"><a href="#fibonacci-函数的-js-实现" class="header-anchor">#</a> fibonacci 函数的 js 实现</h2> <p>1.递归法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">||</span> n <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2.直接运算法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fibonacci2</span> <span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">||</span> n <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> pre <span class="token operator">=</span> <span class="token number">1</span>
+  <span class="token keyword">let</span> next <span class="token operator">=</span> <span class="token number">1</span>
+  <span class="token keyword">let</span> result
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> pre <span class="token operator">+</span> next
+    pre <span class="token operator">=</span> next
+    next <span class="token operator">=</span> result
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="对比"><a href="#对比" class="header-anchor">#</a> 对比</h2> <p>递归法看起来容易理解, 直接还原了斐波那契数列 F(n)=F(n - 1)+F(n - 2)（n ≥ 3，n ∈ N*）的定义,
+但是,我们知道, 在一个函数内部调用另一个函数, 会在当前函数的调用栈添加一条调用函数的记录,必须要等到
+调用的函数执行完,这条记录才会删除, 如果是一个递归函数, 会在当前函数的调用记录中不断追加调用记录,
+如果递归次数过多,不仅影响性能, 还可能直接导致调用栈溢出,程序崩溃.因此, 在实际编程中应该尽量避免使用递归,
+那如果必须要使用递归呢? 别急, 有解决办法. 下回讲解</p> <p>第二种方法利用fibonacci数列的原理, 将当前所求的斐波那契数的前两个节点保存下来,在对他们进行求和,时间复杂度只有O(n),效率高.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/posts/curryingFunction.html" class="prev">
+        函数柯里化
+      </a></span> <span class="next"><a href="/blog/posts/tailRecursion.html">
+        尾递归
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2e061e8d.js" defer></script><script src="/blog/assets/js/2.52153801.js" defer></script><script src="/blog/assets/js/14.488b7cee.js" defer></script>
+  </body>
+</html>
