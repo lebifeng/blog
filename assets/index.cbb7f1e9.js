@@ -1,0 +1,3 @@
+import{u as c,R as e}from"./index.d802f700.js";function a(t){const n=Object.assign({h1:"h1",h2:"h2",p:"p"},c(),t.components);return e.createElement(e.Fragment,null,e.createElement(n.h1,{id:"\u8FDB\u51FB\u7684\u83DC\u9E1F"},"\u8FDB\u51FB\u7684\u83DC\u9E1F"),`
+`,e.createElement(n.h2,{id:"\u524D\u8A00"},"\u524D\u8A00"),`
+`,e.createElement(n.p,null,"\u4E0D\u77E5\u4E0D\u89C9\u5728\u83DC\u9E1F\u5DF2\u7ECF\u4E24\u5E74\u4E86, \u8FD9\u4E24\u5E74\u8BA4\u8BC6\u4E86\u5F88\u591A\u65B0\u670B\u53CB, \u5B66\u5230\u4E86\u5F88\u591A\u65B0\u77E5\u8BC6"))}function r(t={}){const{wrapper:n}=Object.assign({},c(),t.components);return n?e.createElement(n,t,e.createElement(a,t)):a(t)}export{r as default};
