@@ -3,14 +3,23 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-# 生成静态文件
-yarn run build
+# remove temp directory
+rm -rf __temp
 
-cd docs-dist
+# 生成静态文件
+docit build
+
+# 创建临时目录
+mkdir -p __temp
+
+cp -R docs-dist/ __temp
+
+cd __temp
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
-
-# playground 部署分支
 git push -f https://github.com/lebifeng/blog.git  master:gh-pages
+
+cd ..
+rm -rf __temp

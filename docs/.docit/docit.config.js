@@ -11,7 +11,7 @@ const config = {
    *
    * @Default '/'
    */
-  publicPath: "https://github.com/lebifeng/blog/",
+  publicPath: "https://lebifeng.github.io/blog/",
 
   /**
    * A path to your provider, need to be an absolute path.
