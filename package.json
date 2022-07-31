@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "a blog project powered by Docit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "docit build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebifeng/blog.git"
+  },
+  "author": "lebf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lebifeng/blog/issues"
+  },
+  "homepage": "https://github.com/lebifeng/blog#readme",
+  "devDependencies": {
+    "@blizzbolts/docit": "^0.10.1"
+  }
+}
